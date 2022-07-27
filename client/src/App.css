@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  background-image: url("./image/bg1.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* width: 100vw; */
+  box-shadow: 0 5px 5px 3px black; ;
+ 
+}
+.container-bg {
+  border: 2px solid black;  
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(140, 0, 255, 0.623);
+}

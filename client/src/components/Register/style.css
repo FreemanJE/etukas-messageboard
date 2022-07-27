@@ -1,0 +1,32 @@
+.register-container {
+    /* height: 50vh;  */
+  /* width: 50vw; */
+  margin: 10%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.774);
+  box-shadow: 0 13px 20px 10px rgb(38, 18, 44);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.btn {
+    width: 100px;
+    margin-top: 10px;
+}
+label {
+    padding: 10px;
+    font-size: 24px;
+}
+span:hover{
+    background-color: rgb(137, 41, 201);
+}
+span {
+    padding:  0 20px;
+    box-shadow: 0 10px 20px 3px rgb(70, 28, 83);
+    /* box-shadow: 5px 10px 0px rgb(189, 89, 235) ; */
+}
