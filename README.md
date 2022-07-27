@@ -18,6 +18,10 @@ There are 2 folders:
 2. `/server` - this contains the backend code
     - This will run on port `3001`
 
+### Run the Function
+Both the front and back end can be run with `npm run dev` at the root
+    
+
 ### Backend
 
 The backend is stored in the `/server` folder
