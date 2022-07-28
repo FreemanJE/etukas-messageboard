@@ -11,7 +11,6 @@ import passport from "passport";
 import cookieParser from "cookie-parser";
 import configurePassport from "./passport-config.js";
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -38,9 +37,9 @@ configurePassport(passport);
 app.use("/user", userRoutes);
 app.use("/api/message", messageRoutes);
 
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname + "/client/build")));
 app.get("*", (req, res) =>
-  res.sendFile(path.join(__dirname, "client/build/index.html"))
+  res.sendFile(path.join(__dirname + "/client/build/index.html"))
 );
 
 // if (process.env.NODE_ENV === "production") {
@@ -61,6 +60,7 @@ mongoose
   .then(() => console.log("Database connected! 😍☕"))
   .catch((error) => console.log(error, "Database did not connect! ☹️❌"));
 
-app.listen(3001, () =>
+const port = process.env.PORT || 5000;
+app.listen(port, () =>
   console.log("The server is listening on Port 3001... 🐒")
 );
