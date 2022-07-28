@@ -11,6 +11,8 @@ import UsersList from "./components/UsersList";
 import ViewMessages from "./components/ViewMessages";
 import UserMessages from "./components/UserMessages";
 import CreateMessage from "./components/CreateMessage";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -32,7 +34,9 @@ function App() {
               <Route path="/profile" element={<Profile />} />              
             </Routes>
           </div>
+         
         </BrowserRouter>
+        <Footer />
       </div>
     </div>
   );

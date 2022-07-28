@@ -5,3 +5,27 @@
   background-color: rgba(255, 255, 255, 0.774);
   box-shadow: 0 10px 15px 5px rgb(38, 18, 44);
 }
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: blue;
+  height: 8vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  
+}
+.footer-container h4 {
+  color: white;
+  padding: 1.5rem 3rem;
+}
+
+.footer-icon i {
+  font-size: 2rem;
+  color: white;
+  padding: 1.5rem 1rem;
+  pointer-events: auto;  
+  
+}
