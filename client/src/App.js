@@ -29,8 +29,7 @@ function App() {
               <Route path="/userMessage" element={<UserMessages/>} />
               <Route path="/login" element={<Login />} />
               <Route path="/logout" element={<Logout />} />
-              <Route path="/profile" element={<Profile />} />
-              
+              <Route path="/profile" element={<Profile />} />              
             </Routes>
           </div>
         </BrowserRouter>

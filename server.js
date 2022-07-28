@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
 import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
 import userRoutes from "./routes/user.js";
 import messageRoutes from "./routes/message.js";
 import passport from "passport";
@@ -10,37 +12,46 @@ import cookieParser from "cookie-parser";
 
 import configurePassport from "./passport-config.js";
 
-
 dotenv.config();
 const app = express();
-const __dirname = path.resolve();
-app.use(cors({
-  credentials:true,
-  origin:true
-}));
+// const __dirname = path.resolve();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+app.use(
+  cors({
+    credentials: true,
+    origin: true,
+  })
+);
 
 // specify your middleware here
-app.use(express.json())
-app.use(cookieParser())
+app.use(express.json());
+app.use(cookieParser());
 
 app.use(passport.initialize());
 //configure passport using our function.
 configurePassport(passport);
 
 // specify your routes here
-app.use('/user', userRoutes)
-app.use('/api/message', messageRoutes);
+app.use("/user", userRoutes);
+app.use("/api/message", messageRoutes);
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
-  );
-}
+app.use(express.static(path.join(__dirname + "/client/build")));
+app.get("/*", (req, res) =>
+  res.sendFile(path.join(__dirname + "/client/build/index.html"))
+);
+
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+//   );
+// }
 
 console.log("Connecting to database. Put the kettle on while you wait... 🫖");
-console.log(process.env.DB_USER)
+console.log(process.env.DB_USER);
 
 mongoose
   .connect(
@@ -50,4 +61,6 @@ mongoose
   .then(() => console.log("Database connected! 😍☕"))
   .catch((error) => console.log(error, "Database did not connect! ☹️❌"));
 
-app.listen(3001, () => console.log("The server is listening on Port 3001... 🐒"));
+app.listen(3001, () =>
+  console.log("The server is listening on Port 3001... 🐒")
+);
