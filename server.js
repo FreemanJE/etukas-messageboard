@@ -9,15 +9,15 @@ import userRoutes from "./routes/user.js";
 import messageRoutes from "./routes/message.js";
 import passport from "passport";
 import cookieParser from "cookie-parser";
-
 import configurePassport from "./passport-config.js";
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 dotenv.config();
 const app = express();
 // const __dirname = path.resolve();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 app.use(
   cors({
@@ -38,9 +38,9 @@ configurePassport(passport);
 app.use("/user", userRoutes);
 app.use("/api/message", messageRoutes);
 
-app.use(express.static(path.join(__dirname + "/client/build")));
-app.get("/*", (req, res) =>
-  res.sendFile(path.join(__dirname + "/client/build/index.html"))
+app.use(express.static(path.join(__dirname, "client/build")));
+app.get("*", (req, res) =>
+  res.sendFile(path.join(__dirname, "client/build/index.html"))
 );
 
 // if (process.env.NODE_ENV === "production") {
