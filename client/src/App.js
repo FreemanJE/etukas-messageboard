@@ -16,11 +16,11 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
+    
     <div className="App">
       <div className="container-bg" >
         <BrowserRouter>
           <Navbar />
-
           <div className="info-bg">
             <Routes>
               <Route path="/" element={<Homepage />} />
@@ -33,11 +33,10 @@ function App() {
               <Route path="/logout" element={<Logout />} />
               <Route path="/profile" element={<Profile />} />              
             </Routes>
-          </div>
-         
-        </BrowserRouter>
-        <Footer />
+          </div>         
+        </BrowserRouter>        
       </div>
+      <Footer />
     </div>
   );
 }

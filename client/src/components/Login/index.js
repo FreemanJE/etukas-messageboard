@@ -21,9 +21,10 @@ export default function Login() {
       event.target.reset()     
       alert('Login was successful')
       navigate('/profile')
-
-
-    } catch (error) {}
+      
+    } catch (error) {
+      alert('Invalid username or password')
+    }
   };
 
   return (

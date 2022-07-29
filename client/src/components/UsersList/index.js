@@ -34,7 +34,7 @@ export default function UsersList() {
                 <div key={index} className='eachUser' >
                     <h3>User Info</h3>
                     <p>➡ <b>Name: </b> {firstname} {lastname} </p>  
-                    <p>🦏 <b>Username:</b>{username}  </p>
+                    <p>🦏 <b>Username: </b>{username}  </p>
                     <p> <b>User Id: </b>{_id}  </p>   
                     <p> Date Created: {dates.registered}</p> 
                     <img src={avatar} alt='avatar'></img>                  
@@ -44,10 +44,7 @@ export default function UsersList() {
                 </div>
             )
         })}
-        </div>
-
-
-        
+        </div>        
     </div>
   )
 }
