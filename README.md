@@ -1,4 +1,4 @@
-# Fullstack Messageboard
+# Etukas Fullstack Messageboard
 
 ![Chat messages](https://media.giphy.com/media/llVIK4GDgY34nQULnB/giphy.gif)
 
