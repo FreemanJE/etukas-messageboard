@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/etukas-messageboard/static/css/main.22b5320c.chunk.css",
+    "main.js": "/etukas-messageboard/static/js/main.81443ecb.chunk.js",
+    "main.js.map": "/etukas-messageboard/static/js/main.81443ecb.chunk.js.map",
+    "runtime-main.js": "/etukas-messageboard/static/js/runtime-main.712a02f8.js",
+    "runtime-main.js.map": "/etukas-messageboard/static/js/runtime-main.712a02f8.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/etukas-messageboard/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.a7d663d5.chunk.js": "/etukas-messageboard/static/js/2.a7d663d5.chunk.js",
+    "static/js/2.a7d663d5.chunk.js.map": "/etukas-messageboard/static/js/2.a7d663d5.chunk.js.map",
+    "index.html": "/etukas-messageboard/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/etukas-messageboard/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.22b5320c.chunk.css.map": "/etukas-messageboard/static/css/main.22b5320c.chunk.css.map",
+    "static/js/2.a7d663d5.chunk.js.LICENSE.txt": "/etukas-messageboard/static/js/2.a7d663d5.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/etukas-messageboard/static/media/bg1.28c00015.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.712a02f8.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.a7d663d5.chunk.js",
+    "static/css/main.22b5320c.chunk.css",
+    "static/js/main.81443ecb.chunk.js"
+  ]
+}
