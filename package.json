@@ -8,12 +8,11 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node server.js",
+    "start":  "node server.js",    
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run  server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "dev": "concurrently \"npm run  server\" \"npm run client\""    
   },
   "keywords": [],
   "author": "",
@@ -25,10 +24,11 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "gh-pages": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.13",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.0",
     "path": "^0.12.7"
-  }
+  }  
 }

@@ -4,7 +4,7 @@
 
 This assignment combines both frontend and backend, but with a focus on the backend
 
-This is a fullstack application which serves as an online messageboard. Features of this application include a full REST API, with user data stored in a MongoDB server. Users should be able to register, login, view, create, update and delete posts.
+This is a fullstack frontend/backend application which serves as an online messageboard. Features of this application include a full REST API, with user data stored in a MongoDB server. Users should be able to register, login, view, create, update and delete posts.
 
 
 
